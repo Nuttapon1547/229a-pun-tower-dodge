@@ -1,11 +1,11 @@
 using UnityEngine;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private float speed = 1.5f;
     private Rigidbody rb;
     private GameObject player;
-    private GameObject playerHp;
 
 
     void Start()
@@ -28,13 +28,11 @@ public class Enemy : MonoBehaviour
             PlayerController playerController = PlayerCollision.gameObject.GetComponent<PlayerController>();
             if (playerController != null)
             {
-                playerController.Hp -= 1;
-                if (playerController.Hp <= 0)
-                {
-                    playerController.OnGameOver();
-                }
+                playerController.TakeDamage(1);
             }
+
             Destroy(gameObject);
         }
     }
+    
 }
