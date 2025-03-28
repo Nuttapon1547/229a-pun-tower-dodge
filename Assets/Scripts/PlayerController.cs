@@ -7,12 +7,14 @@ public class PlayerController : MonoBehaviour
     public float speed = 5.0f;
     private float horizontalInput;
     private float forwardInput;
-    public float hp = 5f;
+    public float Hp = 5f;
+    public int starCounter;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
+    //player movement
     void Update()
     {
         InputAction move = InputSystem.actions.FindAction("Move");
@@ -22,19 +24,8 @@ public class PlayerController : MonoBehaviour
         transform.Translate(forwardInput * speed * Time.deltaTime * Vector3.forward);
         transform.Translate(horizontalInput* speed * Time.deltaTime * Vector3.right);
     }
-   
-    void OnCollisionEnter(Collision EnemyCollision)
-    {
-        if (EnemyCollision.gameObject.CompareTag("Enemy"))
-        {
-            hp -= 1;
-            if (hp <= 0)
-            {
-                OnGameOver();
-            }
-        }
-    }
-    void OnGameOver()
+    
+    public void OnGameOver()
     {
         SpawnController spawnController = FindObjectOfType<SpawnController>();
         if (spawnController != null)
@@ -42,6 +33,14 @@ public class PlayerController : MonoBehaviour
             spawnController.GameOver();
         }
     }
-
+    
+    public void OnGameWin()
+    {
+        SpawnController spawnController = FindObjectOfType<SpawnController>();
+        if (spawnController != null)
+        {
+            spawnController.GameWin();
+        }
+    }
     
 }
