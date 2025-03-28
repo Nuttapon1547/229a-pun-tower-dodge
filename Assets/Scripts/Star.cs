@@ -4,6 +4,7 @@ public class Star : MonoBehaviour
 {
     void OnCollisionEnter(Collision PlayerCollision)
     {
+        Debug.Log("get star");
         if (PlayerCollision.gameObject.CompareTag("Player"))
         {
             PlayerController playerController = PlayerCollision.gameObject.GetComponent<PlayerController>();

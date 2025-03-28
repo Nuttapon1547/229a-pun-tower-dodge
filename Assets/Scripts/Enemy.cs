@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
     {
         if (PlayerCollision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("hit");
             PlayerController playerController = PlayerCollision.gameObject.GetComponent<PlayerController>();
             if (playerController != null)
             {

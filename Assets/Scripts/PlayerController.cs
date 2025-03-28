@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public Animator Anim;
     Rigidbody rb;
     public float speed = 5.0f;
     private float horizontalInput;
@@ -32,6 +33,13 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(forwardInput * speed * Time.deltaTime * Vector3.forward);
         transform.Translate(horizontalInput* speed * Time.deltaTime * Vector3.right);
+
+        if (horizontalInput > 0 || forwardInput > 0)
+        {
+            Anim.SetBool("IsMoving", true);
+        }
+        else  Anim.SetBool("IsMoving", false);
+        
     }
 
     public void TakeDamage(int damage)
@@ -45,6 +53,7 @@ public class PlayerController : MonoBehaviour
         if (Hp <= 0)
         {
             OnGameOver();
+            Hp = 0;
         }
     }
 
@@ -59,6 +68,7 @@ public class PlayerController : MonoBehaviour
         if (starCounter >= 5)
         {
             OnGameWin();
+            Hp = 0;
         }
     }
     
