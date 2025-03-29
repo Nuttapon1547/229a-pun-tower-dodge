@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SpawnController : MonoBehaviour
 {
+    public PlayerController playerMovement;
     public Transform[] StarSpawnPoint;
     public GameObject StarPrefab;
     public int StarCounter;
@@ -18,6 +19,7 @@ public class SpawnController : MonoBehaviour
     public Button QuitButton;
     void Start()
     {
+        playerMovement.enabled = true;
         GameOverPanel.SetActive(false);
         GameWinPanel.SetActive(false);
         InvokeRepeating("Spawn", 2, 2);
@@ -51,7 +53,7 @@ public class SpawnController : MonoBehaviour
         {
             Destroy(enemy);
         }
-
+        playerMovement.enabled = false;
         GameOverPanel.SetActive(true);
     }
     
@@ -65,6 +67,7 @@ public class SpawnController : MonoBehaviour
         {
             Destroy(enemy);
         }
+        playerMovement.enabled = false;
         
             GameWinPanel.SetActive(true);
     }

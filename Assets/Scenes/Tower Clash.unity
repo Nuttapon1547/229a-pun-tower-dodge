@@ -1897,7 +1897,7 @@ GameObject:
   - component: {fileID: 1404497119}
   m_Layer: 0
   m_Name: SpawnManager
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1914,6 +1914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d8ef9da87d7a14f8206ffaaea1315a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerMovement: {fileID: 543450653313850025}
   StarSpawnPoint:
   - {fileID: 669410085}
   - {fileID: 1074826598}
@@ -2397,10 +2398,10 @@ RectTransform:
   - {fileID: 2115954137}
   m_Father: {fileID: 251844784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1980, y: 1114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1694260643
 MonoBehaviour:
@@ -3522,6 +3523,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1992391907655327016, guid: eb7da51bf788b0d4aa5a83ac14f3cf8f, type: 3}
   m_PrefabInstance: {fileID: 8543033629033927429}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &543450653313850025 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5059548342925079642, guid: eb7da51bf788b0d4aa5a83ac14f3cf8f, type: 3}
+  m_PrefabInstance: {fileID: 8543033629033927429}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c6c2fa6ff455e46be9b5a2a29f31c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8543033629033927429
 PrefabInstance:
   m_ObjectHideFlags: 0

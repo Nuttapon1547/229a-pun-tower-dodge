@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(player.transform.position);
         Vector3 d = player.transform.position - transform.position;
         Vector3 dir = d.normalized;
         rb.AddForce(dir * speed);
@@ -31,7 +32,6 @@ public class Enemy : MonoBehaviour
             {
                 playerController.TakeDamage(1);
             }
-
             Destroy(gameObject);
         }
     }
