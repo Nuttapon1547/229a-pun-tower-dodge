@@ -12,13 +12,14 @@ public class SpawnController : MonoBehaviour
     public Transform[] SpawnPoints;
     public GameObject EnemyPrefab;  
     private Coroutine spawnCoroutine;
-    public GameObject GameOverScreen;
-    public GameObject WinScreen;
+    public GameObject GameOverPanel;
+    public GameObject GameWinPanel;
     public Button RestartButton;
+    public Button QuitButton;
     void Start()
     {
-        GameOverScreen.SetActive(false);
-        WinScreen.SetActive(false);
+        GameOverPanel.SetActive(false);
+        GameWinPanel.SetActive(false);
         InvokeRepeating("Spawn", 2, 2);
         InvokeRepeating("SpawnStar", 7, 7);
     }
@@ -44,14 +45,28 @@ public class SpawnController : MonoBehaviour
     {
         CancelInvoke(nameof(Spawn));
         CancelInvoke(nameof(SpawnStar));
-        GameOverScreen.SetActive(true);
+        
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            Destroy(enemy);
+        }
+
+        GameOverPanel.SetActive(true);
     }
     
     public void GameWin()
     {
         CancelInvoke(nameof(Spawn));
         CancelInvoke(nameof(SpawnStar));
-        WinScreen.SetActive(true);
+        
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies) 
+        {
+            Destroy(enemy);
+        }
+        
+            GameWinPanel.SetActive(true);
     }
 
     public void RestartGame()
@@ -60,4 +75,8 @@ public class SpawnController : MonoBehaviour
         SceneManager.LoadScene(s.name);
     }
    
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
