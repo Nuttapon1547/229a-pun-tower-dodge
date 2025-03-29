@@ -793,7 +793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1159,7 +1159,7 @@ GameObject:
   - component: {fileID: 1028643524}
   - component: {fileID: 1028643523}
   m_Layer: 5
-  m_Name: Quit
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1231,7 +1231,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1404497119}
         m_TargetAssemblyTypeName: SpawnController, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: CreditsScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1931,7 +1931,7 @@ MonoBehaviour:
   GameOverPanel: {fileID: 1694260641}
   GameWinPanel: {fileID: 346392902}
   RestartButton: {fileID: 1848919575}
-  QuitButton: {fileID: 1028643523}
+  CreditsButton: {fileID: 2115954138}
 --- !u!4 &1404497120
 Transform:
   m_ObjectHideFlags: 0
@@ -2498,7 +2498,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3398,7 +3398,7 @@ GameObject:
   - component: {fileID: 2115954139}
   - component: {fileID: 2115954138}
   m_Layer: 5
-  m_Name: Quit
+  m_Name: Credits Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3470,7 +3470,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1404497119}
         m_TargetAssemblyTypeName: SpawnController, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: CreditsScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -16,7 +16,8 @@ public class SpawnController : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject GameWinPanel;
     public Button RestartButton;
-    public Button QuitButton;
+    public Button CreditsButton;
+    public Button MenuButton;
     void Start()
     {
         playerMovement.enabled = true;
@@ -78,8 +79,9 @@ public class SpawnController : MonoBehaviour
         SceneManager.LoadScene(s.name);
     }
    
-    public void QuitGame()
+    public void CreditsScene()
     {
-        Application.Quit();
+        SceneManager.LoadScene(2);
     }
+    
 }
