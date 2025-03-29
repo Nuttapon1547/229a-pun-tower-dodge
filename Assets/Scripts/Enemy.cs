@@ -6,20 +6,22 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float speed = 1.5f;
     private Rigidbody rb;
     private GameObject player;
+    private float mass;
 
 
     void Start()
     {
+        mass = GetComponent<Rigidbody>().mass;
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
     {
-        Debug.Log(player.transform.position);
         Vector3 d = player.transform.position - transform.position;
         Vector3 dir = d.normalized;
-        rb.AddForce(dir * speed);
+        rb.AddForce(dir * speed * mass);
+        rb.linearDamping = 0.5f;
     }
 
     void OnCollisionEnter(Collision PlayerCollision)
