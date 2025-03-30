@@ -824,6 +824,8 @@ MonoBehaviour:
 
     https://www.mixamo.com
 
+    https://assetstore.unity.com
+
     https://assetstore.unity.com'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -889,7 +891,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -252.89856, w: -128.70798}
+  m_margin: {x: 0, y: 0, z: -252.89856, w: -185.86292}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -960,12 +962,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1660707611        No.30        229A
+  m_text: '1660706324        No.20        229B
 
-    1660706324        No.20       
-    229A
+    1660706373        No.21       
+    229B
 
-    1660706373        No.21        229A'
+    1660707611        No.30        229B'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1195,7 +1197,7 @@ GameObject:
   - component: {fileID: 895511338}
   - component: {fileID: 895511337}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1218,7 +1220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 15.1, y: 140}
+  m_AnchoredPosition: {x: 15.1, y: 108}
   m_SizeDelta: {x: 228.5, y: 112.42859}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &895511337
@@ -1394,7 +1396,10 @@ MonoBehaviour:
 
     Player assets
 
-    Star assets'
+    Floor & Pillars
+
+    Star
+    assets'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1459,7 +1464,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -190.68506, w: -123.943665}
+  m_margin: {x: 0, y: 0, z: -190.68506, w: -162.91516}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1610,11 +1615,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Main coding
+  m_text: 'Game design
 
-    Game design
+    Search assets
 
-    Search assets'
+    Main coding'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1799,14 +1804,14 @@ RectTransform:
   m_GameObject: {fileID: 1681120221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5038, y: 1.5038, z: 1.5038}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1420973947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -41, y: -144.72}
+  m_AnchoredPosition: {x: -64, y: -144.72}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1681120223
@@ -1965,11 +1970,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Nuttapon Kaewyoun
+  m_text: 'Thanakrit Changkaeo
 
-    Thanakrit Changkaeo
+    Kachen Kamman
 
-    Kachen Kamman'
+    Nuttapon Kaewyoung'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2079,8 +2084,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1339835252}
-  - {fileID: 564991527}
   - {fileID: 2081864720}
+  - {fileID: 564991527}
   m_Father: {fileID: 1420973947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
@@ -2251,7 +2256,9 @@ MonoBehaviour:
     Maximo "Erika Archer"
 
     Unity asset store
-    "Ten Power-Ups"'
+    "Lite Dungeon Pack"
+
+    Unity asset store "Ten Power-Ups"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2316,7 +2323,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -373.42114, w: -119.99115}
+  m_margin: {x: 0, y: 0, z: -447.25, w: -163.1948}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

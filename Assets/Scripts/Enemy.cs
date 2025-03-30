@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
         Vector3 d = player.transform.position - transform.position;
         Vector3 dir = d.normalized;
         rb.AddForce(dir * speed * mass);
-        rb.linearDamping = 0.5f;
+        rb.linearDamping = mass / 2;
     }
 
     void OnCollisionEnter(Collision PlayerCollision)

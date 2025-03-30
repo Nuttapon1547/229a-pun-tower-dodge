@@ -9,6 +9,9 @@ public class Sensor : MonoBehaviour
         {
             spawnController.GameOver();
         }
-        else Destroy(other.gameObject);
+        else if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
